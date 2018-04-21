@@ -39,6 +39,7 @@ dependencies {
     getplugins 'org.jenkins-ci.plugins:github-branch-source:2.3.4@hpi'
     getplugins 'org.jenkins-ci.plugins:github-oauth:0.29@hpi'
     getplugins 'org.jenkins-ci.plugins:jackson2-api:2.8.11.1@hpi'
+    getplugins 'org.jenkins-ci.plugins:job-dsl:1.69@hpi'
     getplugins 'org.jenkins-ci.plugins:jsch:0.1.54.2@hpi'
     getplugins 'org.jenkins-ci.plugins:junit:1.24@hpi'
     getplugins 'org.jenkins-ci.plugins:mailer:1.21@hpi'
