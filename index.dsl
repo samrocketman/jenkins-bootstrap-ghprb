@@ -29,9 +29,20 @@ pipelineJob('ghprb-test-job') {
   }
   triggers {
     ghprbTrigger {
-      useGitHubHooks(true)
-      orgslist('jenkinsci')
-      commentFilePath('github.comment.file.txt')
+      adminlist ''
+      whitelist ''
+      orgslist 'jenkinsci'
+      cron ''
+      triggerPhrase ''
+      onlyTriggerPhrase false
+      permitAll false
+      autoCloseFailedPullRequests false
+      displayBuildErrorsOnDownstreamBuilds false
+      skipBuildPhrase '.*\[skip\W+ci\].*'
+      blackListCommitAuthor ''
+      allowMembersOfWhitelistedOrgsAsAdmin false
+      useGitHubHooks true
+      commentFilePath 'github.comment.file.txt'
     }
   }
 }
