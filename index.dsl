@@ -38,7 +38,7 @@ pipelineJob('ghprb-test-job') {
       permitAll false
       autoCloseFailedPullRequests false
       displayBuildErrorsOnDownstreamBuilds false
-      skipBuildPhrase '.*\[skip\W+ci\].*'
+      skipBuildPhrase '.*\\[skip\\W+ci\\].*'
       blackListCommitAuthor ''
       allowMembersOfWhitelistedOrgsAsAdmin false
       useGitHubHooks true
