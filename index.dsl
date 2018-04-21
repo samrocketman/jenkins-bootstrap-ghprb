@@ -18,6 +18,7 @@ pipelineJob('ghprb-test-job') {
           branch('${sha1}')
         }
       }
+      scriptPath('Jenkinsfile')
     }
   }
   properties {
