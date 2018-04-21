@@ -5,7 +5,7 @@ githubNamespace = 'samrocketman'
 project = 'jenkins-bootstrap-ghprb'
 githubProjectFull = githubNamespace + '/' + project
 
-pipelineJob("ghprb-test-job") {
+pipelineJob('ghprb-test-job') {
   definition {
     cpsScm {
       scm {
@@ -29,6 +29,6 @@ pipelineJob("ghprb-test-job") {
   triggers {
     useGitHubHooks()
     orgWhitelist('jenkinsci')
-    commentFilePath("github.comment.file.txt")
+    commentFilePath('github.comment.file.txt')
   }
 }
