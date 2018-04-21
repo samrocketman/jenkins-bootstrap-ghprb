@@ -7,6 +7,10 @@ test upgrades of plugins.
 For bootstrap-specific documentation and options refer to the
 [jenkins-bootstrap-shared README](jenkins-bootstrap-shared/README.md)
 
+Clone this project:
+
+    git clone --recursive https://github.com/samrocketman/jenkins-bootstrap-jervis.git
+
 # License
 
 * [ASL 2](LICENSE)
