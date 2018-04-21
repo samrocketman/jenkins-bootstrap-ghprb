@@ -11,6 +11,12 @@ Clone this project:
 
     git clone --recursive https://github.com/samrocketman/jenkins-bootstrap-jervis.git
 
+Copy `settings.groovy.EXAMPLE` to `settings.groovy`.
+
+Bootstrap and configure Jenkins.
+
+    ./jenkins_bootstrap.sh
+
 # License
 
 * [ASL 2](LICENSE)
