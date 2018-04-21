@@ -40,6 +40,15 @@ pipelineJob('ghprb-test-job') {
       displayBuildErrorsOnDownstreamBuilds false
       skipBuildPhrase '.*\\[skip\\W+ci\\].*'
       blackListCommitAuthor ''
+      msgSuccess ''
+      msgFailure ''
+      commitStatusContext ''
+      gitHubAuthId ''
+      buildDescTemplate ''
+      blackListLabels ''
+      whiteListLabels ''
+      includedRegions ''
+      excludedRegions ''
       allowMembersOfWhitelistedOrgsAsAdmin false
       useGitHubHooks true
       commentFilePath 'github.comment.file.txt'
