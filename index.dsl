@@ -21,10 +21,10 @@ pipelineJob('ghprb-test-job') {
       scriptPath('Jenkinsfile')
     }
   }
+  parameters {
+    stringParam('sha1', 'master', 'The commit hash to build.')
+  }
   properties {
-    parameters {
-      stringParam('sha1', 'master', 'The commit hash to build.')
-    }
     githubProjectUrl('https://github.com/' + githubProjectFull)
   }
   triggers {
