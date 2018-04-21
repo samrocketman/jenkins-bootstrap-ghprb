@@ -2,6 +2,11 @@ version: '2.2'
 services:
   jenkins:
     init: true
+#    healthcheck:
+#      test: ['CMD', 'curl -fsLiI -o /dev/null http://localhost:8080/jnlpJars/jenkins-cli.jar']
+#      interval: 5s
+#      timeout: 4s
+#      retries: 12
     build:
       context: .
       dockerfile: jenkins-bootstrap-shared/Dockerfile

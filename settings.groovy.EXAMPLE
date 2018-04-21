@@ -1,0 +1,16 @@
+//set your github token (scope repo) to be used to process pull requests by GHPRB
+String GITHUB_TOKEN = "CHANGEME"
+
+//the following settings are used to configure Jenkins
+master_settings = [
+    'jnlp_slave_port': -1,
+    'master_executors': 1
+]
+credentials = [
+    [
+        'credential_type': 'StringCredentialsImpl',
+        'credentials_id': 'github-token',
+        'description': 'GitHub Personal Access Token used by GHPRB for the GitHub API',
+        'secret': GITHUB_TOKEN
+    ]
+]
